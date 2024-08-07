@@ -1,18 +1,18 @@
 # Feel free to disable non-critical HA parts during devel by commenting lines out
 # Generated in hadk by executing: rpm/dhd/helpers/add_new_device.sh
 
-%package -n patterns-sailfish-device-adaptation-vayu
-Summary: Jolla HW Adaptation vayu
-Requires: droid-hal-vayu
-Requires: droid-hal-vayu-img-boot
-Requires: droid-hal-vayu-kernel-modules
-Requires: droid-config-vayu-sailfish
-Requires: droid-config-vayu-pulseaudio-settings
-Requires: droid-config-vayu-policy-settings
-Requires: droid-config-vayu-preinit-plugin
-Requires: droid-config-vayu-flashing
-Requires: droid-config-vayu-bluez5
-Requires: droid-hal-version-vayu
+%package -n patterns-sailfish-device-adaptation-psyche
+Summary: Jolla HW Adaptation psyche
+Requires: droid-hal-psyche
+Requires: droid-hal-psyche-img-boot
+Requires: droid-hal-psyche-kernel-modules
+Requires: droid-config-psyche-sailfish
+Requires: droid-config-psyche-pulseaudio-settings
+Requires: droid-config-psyche-policy-settings
+Requires: droid-config-psyche-preinit-plugin
+Requires: droid-config-psyche-flashing
+Requires: droid-config-psyche-bluez5
+Requires: droid-hal-version-psyche
 
 # Hybris packages
 Requires: libhybris-libEGL
@@ -92,7 +92,7 @@ Requires: jolla-settings-system-flashlight
 # For suspend to work with enabled Wi-Fi on newer Qualcomm devices
 Requires: sailfish-connman-plugin-suspend
 
-%description -n patterns-sailfish-device-adaptation-vayu
-Pattern with packages for vayu HW Adaptation
+%description -n patterns-sailfish-device-adaptation-psyche
+Pattern with packages for psyche HW Adaptation
 
-%files -n patterns-sailfish-device-adaptation-vayu
+%files -n patterns-sailfish-device-adaptation-psyche

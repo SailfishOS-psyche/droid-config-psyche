@@ -1,15 +1,15 @@
 # These and other macros are documented in
 # ../droid-configs-device/droid-configs.inc
-%define device vayu
+%define device psyche
 %define vendor xiaomi
 %define vendor_pretty Xiaomi
-%define device_pretty Poco X3 Pro
+%define device_pretty Xiaomi 12X
 %define dcd_path ./
 # Adjust this for your device
 %define pixel_ratio 1.5
 # We assume most devices will
 %define have_modem 1
-%define android_version_major 11
+%define android_version_major 13
 
 Conflicts: appsupport-system-privileged
 
@@ -38,5 +38,5 @@ Obsoletes: bluez5-configs-mer
 %define ofono_disable_plugins bluez4,dun_gw_bluez4,hfp_ag_bluez4,hfp_bluez4,dun_gw_bluez5,hfp_bluez5
 
 %include droid-configs-device/droid-configs.inc
-%include patterns/patterns-sailfish-device-adaptation-vayu.inc
-%include patterns/patterns-sailfish-device-configuration-vayu.inc
+%include patterns/patterns-sailfish-device-adaptation-psyche.inc
+%include patterns/patterns-sailfish-device-configuration-psyche.inc
