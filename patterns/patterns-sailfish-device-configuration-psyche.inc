@@ -1,10 +1,10 @@
 # Feel free to disable non-critical HA parts during devel by commenting lines out
 # Generated in hadk by executing: rpm/dhd/helpers/add_new_device.sh
 
-%package -n patterns-sailfish-device-configuration-vayu
-Summary: Jolla Configuration vayu
-Requires: patterns-sailfish-device-configuration-common-vayu
-Requires: patterns-sailfish-device-adaptation-vayu
+%package -n patterns-sailfish-device-configuration-psyche
+Summary: Jolla Configuration psyche
+Requires: patterns-sailfish-device-configuration-common-psyche
+Requires: patterns-sailfish-device-adaptation-psyche
 
 # For devices with cellular modem. Those without one, please comment out:
 Requires: patterns-sailfish-cellular-apps
@@ -50,7 +50,7 @@ Requires: sailfish-utilities
 Requires: sailfish-audiorecorder
 Requires: jolla-settings-networking-plugin-vpn-openfortivpn
 
-%description -n patterns-sailfish-device-configuration-vayu
-Pattern with packages for vayu configurations
+%description -n patterns-sailfish-device-configuration-psyche
+Pattern with packages for psyche configurations
 
-%files -n patterns-sailfish-device-configuration-vayu
+%files -n patterns-sailfish-device-configuration-psyche
