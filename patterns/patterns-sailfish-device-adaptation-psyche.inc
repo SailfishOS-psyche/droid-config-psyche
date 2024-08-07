@@ -68,9 +68,9 @@ Requires: usb-moded
 Requires: rfkill
 
 #Add FP support
-Requires: sailfish-fpd-community
-Requires: sailfish-devicelock-fpd
-Requires: droid-fake-crypt
+#Requires: sailfish-fpd-community
+#Requires: sailfish-devicelock-fpd
+#Requires: droid-fake-crypt
 
 # Enable home encryption
 #Requires: sailfish-device-encryption
