@@ -3,3 +3,6 @@ service time_daemon /vendor/bin/time_daemon_HYBRIS_DISABLED
 
 service vendor.wifi_hal_legacy /vendor/bin/hw/android.hardware.wifi@1.0-service_HYBRIS_DISABLED
     override
+
+service fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.xiaomi_HYBRIS_DISABLED
+    override
