@@ -6,6 +6,7 @@ Summary: Jolla HW Adaptation psyche
 Requires: droid-hal-psyche
 Requires: droid-hal-psyche-img-boot
 Requires: droid-hal-psyche-kernel-dtbo
+Requires: droid-hal-psyche-vendor_boot
 Requires: droid-hal-psyche-kernel-modules
 Requires: droid-config-psyche-sailfish
 Requires: droid-config-psyche-pulseaudio-settings
