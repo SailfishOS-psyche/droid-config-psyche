@@ -6,3 +6,6 @@ service vendor.wifi_hal_legacy /vendor/bin/hw/android.hardware.wifi@1.0-service_
 
 service vendor.qti.vibrator /vendor/bin/hw/vendor.qti.hardware.vibrator.service_HYBRIS_DISABLED
     override
+
+service vendor.lineage.livedisplay /vendor/bin/hw/vendor.lineage.livedisplay@2.0-service-sdm_HYBRIS_DISABLED
+    override
