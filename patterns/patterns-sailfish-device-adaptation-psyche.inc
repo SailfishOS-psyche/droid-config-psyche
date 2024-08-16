@@ -14,6 +14,7 @@ Requires: droid-config-psyche-policy-settings
 Requires: droid-config-psyche-preinit-plugin
 Requires: droid-config-psyche-flashing
 Requires: droid-config-psyche-bluez5
+Requires: droid-system-psyche
 Requires: droid-hal-version-psyche
 
 # Hybris packages
