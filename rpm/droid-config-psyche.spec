@@ -26,10 +26,6 @@ Obsoletes: qt5-qpa-surfaceflinger-plugin
 # Community HW adaptations need this
 %define community_adaptation 1
 
-# OTA via self-hosted repo needs to have all adaptation-community repos removed
-Conflicts: community-adaptation-testing
-Obsoletes: community-adaptation-testing
-
 # For bluez5
 Provides: bluez5-configs
 Obsoletes: bluez5-configs-mer
