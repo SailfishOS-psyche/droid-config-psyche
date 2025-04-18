@@ -33,6 +33,8 @@ Obsoletes: bluez5-configs-mer
 %define ofono_enable_plugins bluez5,hfp_ag_bluez5
 %define ofono_disable_plugins bluez4,dun_gw_bluez4,hfp_ag_bluez4,hfp_bluez4,dun_gw_bluez5,hfp_bluez5
 
+Requires: libgbinder-tools
+
 %include droid-configs-device/droid-configs.inc
 %include patterns/patterns-sailfish-device-adaptation-psyche.inc
 %include patterns/patterns-sailfish-device-configuration-psyche.inc
