@@ -9,7 +9,7 @@
 %define pixel_ratio 1.5
 # We assume most devices will
 %define have_modem 1
-%define android_version_major 13
+%define android_version_major 14
 
 Conflicts: appsupport-system-privileged
 
