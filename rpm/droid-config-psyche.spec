@@ -21,8 +21,6 @@ Provides: ofono-configs
 Obsoletes: ofono-configs-mer
 Obsoletes: ofono-configs-binder
 
-Obsoletes: qt5-qpa-surfaceflinger-plugin
-
 # Community HW adaptations need this
 %define community_adaptation 1
 

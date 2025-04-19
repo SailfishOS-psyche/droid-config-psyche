@@ -27,6 +27,8 @@ Requires: bluebinder
 # Telephony
 Requires: ofono-binder-plugin
 Requires: dummy_netd
+Requires: modem_auto_config
+Requires: ofono-vendor-qti-radio-plugin
 
 # Sensors
 Requires: hybris-libsensorfw-qt5
@@ -88,6 +90,9 @@ Requires: jolla-settings-system-nfc
 
 # For torch
 Requires: jolla-settings-system-flashlight
+
+# Splash screen
+Requires: yamuisplash
 
 # For suspend to work with enabled Wi-Fi on newer Qualcomm devices
 Requires: sailfish-connman-plugin-suspend

@@ -16,17 +16,6 @@ if [ ! -e "$GEN_IMG_BASE.tar.bz2" ]; then
 	exit 1
 fi
 
-for bootname in *.img; do
-	GEN_BOOT_IMG=$(basename $bootname .img) # hybris-boot.img
-done
-
-# Make sure we have 'bc' to estimate rootfs size
-zypper --non-interactive in bc &> /dev/null
-
-# Roughly estimate the final rootfs size when installed
-IMAGE_SIZE=`echo "scale=2; 2.25 * $(du -h $GEN_IMG_BASE.tar.bz2 | cut -d'M' -f1)" | bc`
-echo "[hybris-installer] Estimated rootfs size when installed: ${IMAGE_SIZE}M"
-
 # Output filenames
 DST_IMG=sfos-rootfs.tar.bz2
 DST_PKG=$ID-$VERSION_ID-$DATE-$DEVICE$EXTRA_NAME # sailfishos-3.2.0.12-20191101-$DEVICE
@@ -40,11 +29,14 @@ fi
 mkdir updater/
 mv $GEN_IMG_BASE.tar.bz2 updater/$DST_IMG
 cp -r ../hybris/hybris-installer/hybris-installer/* updater/
-cp $GEN_BOOT_IMG.img updater/$GEN_BOOT_IMG.img
+cp dtbo.img updater/dtbo.img
+cp hybris-boot.img updater/hybris-boot.img
+cp vendor_boot.img updater/vendor_boot.img
+
 
 # Update install script with image details
-LOS_VER="20.0"
-sed -e "s/%DEVICE%/$DEVICE/g" -e "s/%VERSION%/$VERSION/g" -e "s/%VERSION_ID%/$VERSION_ID/g" -e "s/%DATE%/$DATE/g" -e "s/%IMAGE_SIZE%/${IMAGE_SIZE}M/g" -e "s/%DST_PKG%/$DST_PKG/g" -e "s/%LOS_VER%/$LOS_VER/g" -i updater/META-INF/com/google/android/update-binary
+LOS_VER="21.0"
+sed -e "s/%DEVICE%/$DEVICE/g" -e "s/%VERSION%/$VERSION/g" -e "s/%VERSION_ID%/$VERSION_ID/g" -e "s/%DATE%/$DATE/g" -e "s/%DST_PKG%/$DST_PKG/g" -e "s/%LOS_VER%/$LOS_VER/g" -i updater/META-INF/com/google/android/update-binary
 
 # Pack updater .zip
 pushd updater # sfe-$DEVICE-$RELEASE_ID/updater
